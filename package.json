@@ -1,0 +1,14 @@
+{
+  "name": "claude-session-tracker",
+  "version": "1.0.0",
+  "description": "Session counter, task progress bar, and context monitor for Claude Code",
+  "bin": {
+    "claude-session-tracker": "./install.js"
+  },
+  "scripts": {
+    "install-hooks": "node install.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
