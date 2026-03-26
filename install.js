@@ -40,13 +40,8 @@ if (!settings.hooks) settings.hooks = {};
 // Use forward slashes for cross-platform node compatibility
 const hooksPath = HOOKS_DIR.replace(/\\/g, '/');
 
-// 3. Add Statusline hook
-settings.hooks.Statusline = [{
-  hooks: [{
-    type: 'command',
-    command: `node "${hooksPath}/statusline.js"`
-  }]
-}];
+// 3. Add statusLine (top-level setting, not a hook event)
+settings.statusLine = `node "${hooksPath}/statusline.js"`;
 
 // 4. Add Stop hook (session end)
 if (!settings.hooks.Stop) settings.hooks.Stop = [];
